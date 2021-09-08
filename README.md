@@ -53,3 +53,10 @@
 ​	**Puxar código já existente no Git para o meu repositório local:**
 
 ​		_git pull origin master_
+
+> É usado para verificar conflitos, pois duas pessoas podem ter modificado a mesma linha e para fazer a correção para que o código fique em perfeito estado, o mesmo pode ser puxado para verificar as modificações
+
+​	**Baixando um repositório do Git:**
+
+​		_git clone git@github.com:Wallison00/Git.git_
+
