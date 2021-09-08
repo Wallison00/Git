@@ -12,7 +12,7 @@
 
 ​		_git add *_
 
-​	**Listar os comandos globais**
+​	**Listar os comandos globais:**
 
 ​		_git config --global --list_
 
@@ -22,19 +22,29 @@
 
 ​		_git config --global user.name "Nome_do_Autor"
 
-**Editar os comandos:**
+​	**Editar os comandos:**
 
 ​		_git config --global --unset user.name_
 
-> ​	*OBS: Após a modificação a pessoa pode sinalizar um novo nome adicionando 	um user.name "Novo_nome"*
+> OBS: Após a modificação a pessoa pode sinalizar um novo nome adicionando um user.name "Novo_nome"
 
-​	**Commitar o git**
+​	**Commitar o git:**
 
 ​		_git commit -m "Nome do Comentário"_
 
 ​	**Verificar o Status:**
 
 ​		_git status_
+
+​	**Emparelhar o seu repositório local com o repositório do GitHub:**
+
+​		_git remote add origin git@github.com:Wallison00/Git.git_
+
+> Link deste repositório
+
+​	**Listar os repositórios remotos que seu git tem:**
+
+​		_git remote -v_
 
 
 
