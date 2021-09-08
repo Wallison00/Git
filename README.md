@@ -46,5 +46,7 @@
 
 ​		_git remote -v_
 
+​	**Subir o nosso código para o Git:**
 
+​		_git push origin master_
 
