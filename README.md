@@ -50,3 +50,6 @@
 
 ​		_git push origin master_
 
+​	**Puxar código já existente no Git para o meu repositório local:**
+
+​		_git pull origin master_
