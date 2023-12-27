@@ -1,0 +1,89 @@
+Aulas Git
+
+* Criar um repositório remoto
+	1º Executar o comando git remote add origin <URL_do_repositório>
+	2º Subir o repositório local para o git: git push -u origin master
+
+* Instalação das configurações de usuário no git
+	git config --global user.name "nome do usuário"
+	
+	git config --global user.email seu_email@email.com
+
+* Para verficar quais dados estão gravados use os comandos
+	git config user.name
+
+	git config user.email
+
+* Caso queira mudar o nome do seu repositório padrão você deve
+	1º Visualisar o nome da branch padrão
+	git config init.defaultBranch
+
+	2º Definir o novo nome para a nova branch
+	git config --global init.defaultBranch novo_nome
+
+* Criar um repositório local (Pasta)
+	1º Digite o comando mkdir nome_da_pasta
+	2º Digite o comando cd nome_da_pasta para poder acessar a pasta criada
+
+* Inicializar um repositório git em uma pasta local
+	1º Digite o comando git init
+
+* Clonar um repositório do git
+	1º pegar o link Https gerado pelo git hub que deseja clonar
+	2º Ir no pronpt de comando executar o seguinte comando git clone link_do_repositório_git (Você deve está dentro de uma pasta para que o git crie a cópia em sua pasta)
+
+* Verificar o histórico dos commits
+	git log
+
+* Remover o versionamento de uma pasta
+	1º Você deve está na pasta que deseja retirar o versionamento
+	2º executar o comando rm -rf .git
+
+* Restaurar um arquivo para a sua ultima versao
+	Digite o comando git restore nome_do_arquivo
+
+Atualizar o nome da ultimo commit realizado
+	digite o comando git commit --amend -m "novo nome"
+
+Retornar para um commit anterior
+	git reset --soft hash_do_commit_desejado (Retorna ao git informado sem adição das modificações)
+	git reset --mixed hash_do_commit_desejado (processo padrão do git reset)
+	git reset --hard hash_do_commit_desejado (Retorna exatamente para o commit desejado ignorando tudo, sem opção de retorno)
+
+* Criando uma branch
+	Digite o comando echo "texto_do_conteudo_do_arquivo" > nome_do_arquivo.extensão
+	+ O comando acima cria um arquivo e adiciona um texto dentro dele
+
+* Visualizar o conteudo de uma pasta ou arquivo
+	cat nome_do_arquivo
+
+* Criando um arquivo
+	touch <Nome_do_arquivo>
+
+* Criar uma nova branch
+	git checkout -b nome_da_branch
+
+* Listar os commit's das branchs
+	git branch -v
+
+* Listar as branchs
+	git branch
+
+* Excluir uma branch
+	git branch -D <nome_da_branch>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
