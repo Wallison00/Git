@@ -1,18 +1,27 @@
-* inicializar reposit贸rio local
+* inicializar reposit髍io local
 	git init
 
-* configurar o usu谩rio do git
+* configurar o usu醨io do git
 	git config --global user.email "voce@exemplo.com.br"
 	git config --global user.name "seu nome"
 
 *Definir o nome da branch local a ser trabalhada
 	git branch -M nome_da_banch_remota 
 
-* Sincronizar o reposit贸rio local com o remoto
+* Sincronizar o reposit髍io local com o remoto
 	git remote add origin link_do_repositorio_remoto
 
-*Subir o c贸dico para o reposit贸rio
+*Subir o c骴igo para o reposit髍io
 	git push -u origin nome_da_branch_remota
 
-*Baixar para a sua m谩quina o reposit贸rio remoto
+*Baixar para a sua m醧uina o reposit髍io remoto
 	git clone link_do_repositorio
+
+*Listar os reposit髍ios remotos conectados (Adicionados no repo. Local)
+	git remote
+
+* Para adicionar um novo editor na linha de autoria, deve-se seguir a seguinte estrutura.
+	git commit -m "Modifica珲es informadas"
+	>
+	>
+	Co-authored-by: nome_do_co_autor <nome@email.com>
