@@ -25,3 +25,7 @@
 	>
 	>
 	Co-authored-by: nome_do_co_autor <nome@email.com>
+
+*Reverter modificações do ultimo commit sem apaga-lo e criar um novo commit (Ctrl + Z)
+	git revert numero_do_rash_do_ultimo_commit
+
