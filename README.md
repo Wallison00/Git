@@ -1,62 +1,60 @@
-# REPOSITÓRIO DE COMANDOS GIT
+# Lista de comandos GIT aprendidos no Alura
 
-> Olá, este repositório tem o intuito de informar todos os comandos git que eu aprendi no curso de GIT do Digital Innovation One, para que caso eu venha esquecer, ele exista para lembrar dos devidos comandos.
+## Inicializar reposit�rio local
+```	
+git init
+```
 
-#### Comandos:
+## configurar o usu�rio do git
+```	
+git config --global user.email "voce@exemplo.com.br"
+git config --global user.name "seu nome"
+```
 
-​	**Criar pasta .Git no seu repositório local: **
+## Definir o nome da branch local a ser trabalhada
+```	
+git branch -M nome_da_banch_remota 
+```
 
-​		_git init_ 
+## Sincronizar o reposit�rio local com o remoto
+```
+git remote add origin link_do_repositorio_remoto
+```
 
-​	**Adicionar todos os seus arquivos:**
+## Subir o c�digo para o reposit�rio
+```
+git push -u origin nome_da_branch_remota
+```
 
-​		_git add *_
+## Baixar para a sua m�quina o reposit�rio remoto
+```
+git clone link_do_repositorio
+```
 
-​	**Listar os comandos globais:**
+## Listar os reposit�rios remotos conectados (Adicionados no repo. Local)
+```
+git remote
+```
 
-​		_git config --global --list_
+## Para adicionar um novo editor na linha de autoria, deve-se seguir a seguinte estrutura.
+```
+	git commit -m "Modifica��es informadas"
+	>
+	>
+	Co-authored-by: nome_do_co_autor <nome@email.com>
+```
 
-​	**Adicionar seu E-mail e Nome do Autor do Repositório:**
+## Reverter modifica��es do ultimo commit sem apaga-lo e criar um novo commit (Ctrl + Z)
+```
+	git revert numero_do_rash_do_ultimo_commit
+```
 
-​		_git config --global user.email "email@online.com"_
+## Resetando um commit (--hard) - Realiza um reset for�ado para o penultimo commit
+```
+	git reset --hard numero_do_id_do_commit
+```
 
-​		_git config --global user.name "Nome_do_Autor"
-
-​	**Editar os comandos:**
-
-​		_git config --global --unset user.name_
-
-> OBS: Após a modificação a pessoa pode sinalizar um novo nome adicionando um user.name "Novo_nome"
-
-​	**Commitar o git:**
-
-​		_git commit -m "Nome do Comentário"_
-
-​	**Verificar o Status:**
-
-​		_git status_
-
-​	**Emparelhar o seu repositório local com o repositório do GitHub:**
-
-​		_git remote add origin git@github.com:Wallison00/Git.git_
-
-> Link deste repositório
-
-​	**Listar os repositórios remotos que seu git tem:**
-
-​		_git remote -v_
-
-​	**Subir o nosso código para o Git:**
-
-​		_git push origin master_
-
-​	**Puxar código já existente no Git para o meu repositório local:**
-
-​		_git pull origin master_
-
-> É usado para verificar conflitos, pois duas pessoas podem ter modificado a mesma linha e para fazer a correção para que o código fique em perfeito estado, o mesmo pode ser puxado para verificar as modificações
-
-​	**Baixando um repositório do Git:**
-
-​		_git clone git@github.com:Wallison00/Git.git_
-
+## Alterar um commit
+```
+	git commit --amend -m "Novo Commit"
+```
