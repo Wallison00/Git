@@ -58,3 +58,6 @@ git remote
 ```
 	git commit --amend -m "Novo Commit"
 ```
+
+## Ingnorar um arquivo no Git
+>> É necessário criar um arquivo com o nome ".gitignore" e dentro dele, informar os arquivos ou os diretórios
