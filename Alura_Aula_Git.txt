@@ -29,3 +29,8 @@
 *Reverter modificações do ultimo commit sem apaga-lo e criar um novo commit (Ctrl + Z)
 	git revert numero_do_rash_do_ultimo_commit
 
+*Resetando um commit (--hard) - Realiza um reset forçado para o penultimo commit
+	git reset --hard numero_do_id_do_commit
+
+*Alterar um commit
+	git commit --amend -m "Novo Commit"
